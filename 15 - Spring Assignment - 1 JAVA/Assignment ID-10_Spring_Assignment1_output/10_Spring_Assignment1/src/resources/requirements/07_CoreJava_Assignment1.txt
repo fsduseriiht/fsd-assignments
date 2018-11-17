@@ -1,0 +1,32 @@
+Assignment ID:07_CoreJava_Assignment1
+
+Deliverable Instructions
+1.Include the script or code snippets in a word document
+2.Paste the outputscreen shots in the very same word document
+3.Name the word document as <AssignmentId_EmpId_EmpName>
+
+Core Java –(Serialization and Deserialization)
+
+Consider the below entities 
+
+Subject
+	subjectId			long
+	subtitle			String
+	durationInHours		int
+	references			Set<Book>
+
+Book
+	bookId 				long
+	title 				String
+	price 				double
+	volume 				integer
+	publishDate 		LocalDate
+
+Develop a menu driven console based java application to facilitate the below operations on a binary data file (serialization and deserialization)
+	a.	Add a Subject
+	b.	Add a Book
+	c.	Delete a Subject
+	d.	Delete a book
+	e.	Search for a book
+	f.	Search for a subject
+	g.	Exit

@@ -1,0 +1,181 @@
+_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]], SubjectEntity [subjectId=7, subtitle=FSD Music Subject, durationInHours=10, references=[]], SubjectEntity [subjectId=8, subtitle=FSD Musicalities, durationInHours=78, references=[BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+ApplicationController :: inside getRealContextPathOfApplication()
+ApplicationController :: inside getRealContextPathOfApplication()
+Inside ApplicationController.addBook() start
+Inside ApplicationService.addBookToStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.addBookToDB() start
+Hibernate: insert into BOOK_TABLE (TITLE, PRICE, VOLUME, PUBLISHDATE, SUBJECTID) values (?, ?, ?, ?, ?)
+HibernateApplicationDAO : bookEntity saved to DB with id = 9
+Inside HibernateApplicationDAO.addBookToDB() end
+Inside ApplicationService.addBookToStorage() end
+Book Added...
+Inside ApplicationController.addBook() end
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0], BookEntity [bookId=9, title=FSD Test Subject 1, price=77.0, volume=4, publishDate=2012-12-12, subjectId=0]]
+Inside HibernateApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+ApplicationController :: inside deleteBook()
+ApplicationController :: inside getRealContextPathOfApplication()
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0], BookEntity [bookId=9, title=FSD Test Subject 1, price=77.0, volume=4, publishDate=2012-12-12, subjectId=0]]
+Inside HibernateApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Book with subject Id [9] going to be deleted...
+Inside ApplicationController.deleteBook() start
+Inside ApplicationService.deleteBookFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.deleteBookFromDB() start
+HibernateApplicationDAO : bookEntity deleted from DB
+Hibernate: delete from BOOK_TABLE where BOOKID=?
+Inside HibernateApplicationDAO.deleteBookFromDB() end
+Inside ApplicationService.deleteBookFromStorage() end
+Book Deleted...
+Inside ApplicationController.deleteBook() end
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]
+Inside HibernateApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+ApplicationController :: inside displayAllSubjects()
+ApplicationController :: inside getRealContextPathOfApplication()
+ApplicationController :: inside displaySubjects()
+SearchMap Built = searchMap = {3=allSubjects}
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() start
+Hibernate: select subjectent0_.SUBJECTID as SUBJECTI1_1_, subjectent0_.SUBTITLE as SUBTITLE2_1_, subjectent0_.DURATIONINHOURS as DURATION3_1_ from SUBJECT_TABLE subjectent0_ order by subjectent0_.SUBJECTID asc
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]], SubjectEntity [subjectId=7, subtitle=FSD Music Subject, durationInHours=10, references=[]], SubjectEntity [subjectId=8, subtitle=FSD Musicalities, durationInHours=78, references=[BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+Subject Details :
+    ID                 TITLE    Duration        Books To Refer
+------  --------------------    --------        --------------
+     1      Hindi-Literature         100        [Hindi Prose-II; Hindi Prose-I]
+     2     Geography-Primary          50        [Geography for Newbies Vol.I; Geography for Beginers vol2]
+     6               History          19        No Books Selected
+     7     FSD Music Subject          10        No Books Selected
+     8      FSD Musicalities          78        [Learning Guitar - PART-II; Learning Piano; Learning Viola]
+ApplicationController :: displaySubjects() work finished.................
+ApplicationController :: inside getRealContextPathOfApplication()
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]
+Inside HibernateApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+ApplicationController :: inside getRealContextPathOfApplication()
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0], BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]
+Inside HibernateApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Inside ApplicationController.addSubject() start
+Inside ApplicationService.addSubjectToStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.addSubjectToDB() start
+Hibernate: insert into SUBJECT_TABLE (SUBTITLE, DURATIONINHOURS) values (?, ?)
+HibernateApplicationDAO : subjectEntity saved to DB with id = 9
+Hibernate: update BOOK_TABLE set SUBJECTID=? where BOOKID=?
+Inside HibernateApplicationDAO.addSubjectToDB() end
+Inside ApplicationService.addSubjectToStorage() end
+Subject Added...
+Inside ApplicationController.addSubject() end
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() start
+Hibernate: select subjectent0_.SUBJECTID as SUBJECTI1_1_, subjectent0_.SUBTITLE as SUBTITLE2_1_, subjectent0_.DURATIONINHOURS as DURATION3_1_ from SUBJECT_TABLE subjectent0_ order by subjectent0_.SUBJECTID asc
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]], SubjectEntity [subjectId=7, subtitle=FSD Music Subject, durationInHours=10, references=[]], SubjectEntity [subjectId=8, subtitle=FSD Musicalities, durationInHours=78, references=[BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]], SubjectEntity [subjectId=9, subtitle=Delete Test Subject, durationInHours=7, references=[BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+ApplicationController :: inside deleteSubject()
+ApplicationController :: inside getRealContextPathOfApplication()
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() start
+Hibernate: select subjectent0_.SUBJECTID as SUBJECTI1_1_, subjectent0_.SUBTITLE as SUBTITLE2_1_, subjectent0_.DURATIONINHOURS as DURATION3_1_ from SUBJECT_TABLE subjectent0_ order by subjectent0_.SUBJECTID asc
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]], SubjectEntity [subjectId=7, subtitle=FSD Music Subject, durationInHours=10, references=[]], SubjectEntity [subjectId=8, subtitle=FSD Musicalities, durationInHours=78, references=[BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]], SubjectEntity [subjectId=9, subtitle=Delete Test Subject, durationInHours=7, references=[BookEntity [bookId=8, title=Learning Viola, price=77.0, volume=9, publishDate=2016-11-13, subjectId=0]]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Subject with subject Id [9] is going to be deleted...
+Inside ApplicationController.deleteSubject() start
+Inside ApplicationService.deleteSubjectFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.deleteSubjectFromDB() start
+HibernateApplicationDAO : subjectEntity deleted from DB
+Hibernate: update BOOK_TABLE set SUBJECTID=null where SUBJECTID=?
+Hibernate: delete from SUBJECT_TABLE where SUBJECTID=?
+Inside HibernateApplicationDAO.deleteSubjectFromDB() end
+Inside ApplicationService.deleteSubjectFromStorage() end
+Subject Deleted...
+Inside ApplicationController.deleteSubject() end
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() start
+Hibernate: select subjectent0_.SUBJECTID as SUBJECTI1_1_, subjectent0_.SUBTITLE as SUBTITLE2_1_, subjectent0_.DURATIONINHOURS as DURATION3_1_ from SUBJECT_TABLE subjectent0_ order by subjectent0_.SUBJECTID asc
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]], SubjectEntity [subjectId=7, subtitle=FSD Music Subject, durationInHours=10, references=[]], SubjectEntity [subjectId=8, subtitle=FSD Musicalities, durationInHours=78, references=[BookEntity [bookId=7, title=Learning Piano, price=78.0, volume=9, publishDate=2015-11-17, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end

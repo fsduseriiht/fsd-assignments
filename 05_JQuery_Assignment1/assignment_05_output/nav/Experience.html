@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/assignment.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Experience</title>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#addExperience').click(function() {
+        var companyTable = $("#companyTable");
+        var tableBody = companyTable.find('tbody')[0];
+        var tableWrapperDiv = $("#tableWrapper");
+        var newTableRow = $('<tr>');
+        $(newTableRow).attr('class', 'form-group');
+        var errorMessage = '';
+        var valueArray = [];
+        var companies = ['Company Name', 'Duration in months'];
+        valueArray.push($("#companyNameText").val());
+        valueArray.push($("#durationText").val());
+
+        for(var i=0; i<valueArray.length; i++) {
+          var tableData = $('<td>');
+          $(tableData).html(valueArray[i]);
+          if (valueArray[i].trim()) {
+            $(newTableRow).append(tableData);
+          } else {
+            errorMessage += 'Please enter proper value for ' + companies[i] + ' field \n';
+          }
+        }
+
+        if (errorMessage) {
+          alert(errorMessage)
+        } else {
+          $(tableWrapperDiv).css('display', 'block');
+          $(newTableRow).append('<td><span class="removeExperience">X</span></td>')
+          $(tableBody).append(newTableRow);
+        }      
+      });
+
+      $(document).on('click', '.removeExperience', function() {
+        $(this).parents('tr').remove();
+        if ($('#companyTable tr').length === 1) {
+          $('#tableWrapper').css('display', 'none');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="nav nav-tabs col-xs-2">
+    <a href="ProfileHighlights.html">Profile Highlights</a> <br/>
+    <a href="Projects.html">Projects</a> <br/>
+    <a href="Experience.html">Experience</a> <br/>
+    <a href="PersonalBiography.html">Personal Biography</a> <br/>
+    <a href="ContactMe.html">Contact Me</a>
+  </nav>
+  <div class="content col-xs-10">
+    <div id="tableWrapper">
+      <h3>Work Experience - </h3>
+      <table class="table-bordered table-striped" id="companyTable" width="100%">
+        <tr class="form-group">
+          <td>Company Name</td>
+          <td>Duration in months</td>
+          <td>Actions</td>
+        </tr>
+      </table>
+    </div>
+    <h3>Add Experience - </h3>
+    <form>
+      <table class="table-striped">
+        <tr class="form-group">
+          <td><label>Company Name</label></td>
+          <td><input class="form-control" type="text" id="companyNameText" required="required"></td>
+        </tr>
+        <tr class="form-group">
+          <td><label>Duration in months</label></td>
+          <td><input class="form-control" type="number" id="durationText" required="required"></td>
+        </tr>
+        <tr class="form-group">
+          <td><button type="button" id="addExperience" class="btn btn-primary" value="Add Experience">Submit</button></td>
+          <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  </div>
+</body>
+</html>

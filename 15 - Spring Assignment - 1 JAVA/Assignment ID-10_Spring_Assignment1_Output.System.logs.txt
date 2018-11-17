@@ -1,0 +1,299 @@
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+3
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     1	                   1	       1	[1]
+     2	                sub2	      22	[2; qqqq]
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+   777	          Literature	      56	[1; 2]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = a
+Input value "a" received...
+
+
+
+==========================================================
+Operation - Add a Subject
+==========================================================
+Enter the Subject details :: 
+Enter the Subject Id (only numbers) :: 999
+Enter the Subject subtitle :: NewSpringBook1
+Enter the Subject Duration in Hours (only numbers) :: 100
+Select the Book references(Book Id) from the menu below (Seperated by semi-colon ";") :: 
+Book Details : 
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+Enter Book ID (only numbers seperated by semi-colon ";") :- 2
+The Subject Details entered by the User is ::
+   999	      NewSpringBook1	     100	[2]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = c
+Input value "c" received...
+
+
+
+==========================================================
+Operation - Delete a Subject
+==========================================================
+Showing all existing Subjects...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     1	                   1	       1	[1]
+     2	                sub2	      22	[2; qqqq]
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+   777	          Literature	      56	[1; 2]
+   999	      NewSpringBook1	     100	[2]
+Select the Subject Id to delete (only numbers) ::999
+Book with subject Id [999] deleted...
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = b
+Input value "b" received...
+
+
+
+==========================================================
+Operation - Add a Book
+==========================================================
+Enter the Book details :: 
+Enter the Book Id (only numbers) :: 444
+Enter the Book title :: NewSpringDummies 1
+Enter the Book price (only numbers [decimal]) :: 78
+Enter the Book Volume (only numbers) :: 9
+Enter the Book Publish Date (format = "dd-MM-yyyy") :: 10-11-2018
+Books Added = 
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+   444	  NewSpringDummies 1	  78.0	         9	10-Nov-2018
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = a
+Input value "a" received...
+
+
+
+==========================================================
+Operation - Add a Subject
+==========================================================
+Enter the Subject details :: 
+Enter the Subject Id (only numbers) :: 999
+Enter the Subject subtitle :: Study Spring Java
+Enter the Subject Duration in Hours (only numbers) :: 78
+Select the Book references(Book Id) from the menu below (Seperated by semi-colon ";") :: 
+Book Details : 
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+   444	  NewSpringDummies 1	  78.0	         9	10-Nov-2018
+Enter Book ID (only numbers seperated by semi-colon ";") :- 444
+The Subject Details entered by the User is ::
+   999	   Study Spring Java	      78	[NewSpringDummies 1]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+3
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+   444	  NewSpringDummies 1	  78.0	         9	10-Nov-2018
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     1	                   1	       1	[1]
+     2	                sub2	      22	[2; qqqq]
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+   777	          Literature	      56	[1; 2]
+   999	   Study Spring Java	      78	[NewSpringDummies 1]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = g
+Input value "g" received...
+
+
+Exiting the program...
+--------------------

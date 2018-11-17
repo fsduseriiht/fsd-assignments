@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/assignment.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Projects</title>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#addProject').click(function() {
+        var projectTable = $("#projectTable");
+        var tableBody = projectTable.find('tbody')[0];
+        var tableWrapperDiv = $("#tableWrapper");
+        var newTableRow = $('<tr>');
+        $(newTableRow).attr('class', 'form-group');
+        var errorMessage = '';
+        var valueArray = [];
+        var projects = ['Project Name', 'Duration in months', 'Technologies'];
+        valueArray.push($("#projectNameText").val());
+        valueArray.push($("#durationText").val());
+        valueArray.push($("#technologiesText").val());
+
+        for(var i=0; i<valueArray.length; i++) {
+          var tableData = $('<td>');
+          tableData.html(valueArray[i]);
+          if (valueArray[i].trim()) {
+            $(newTableRow).append(tableData);
+          } else {
+            errorMessage += 'Please enter proper value for ' + projects[i] + ' field \n';
+          }
+        }
+
+        if (errorMessage) {
+          alert(errorMessage)
+        } else {
+          $(tableWrapperDiv).css('display', 'block');
+          $(newTableRow).append('<td><span class="removeProject">X</span></td>')
+          $(tableBody).append(newTableRow);
+        }
+      });
+
+      $(document).on('click', '.removeProject', function() {
+        $(this).parents('tr').remove();
+        if ($('#projectTable tr').length === 1) {
+          $('#tableWrapper').css('display', 'none');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="nav nav-tabs col-xs-2">
+    <a href="ProfileHighlights.html">Profile Highlights</a> <br/>
+    <a href="Projects.html">Projects</a> <br/>
+    <a href="Experience.html">Experience</a> <br/>
+    <a href="PersonalBiography.html">Personal Biography</a> <br/>
+    <a href="ContactMe.html">Contact Me</a>
+  </nav>
+  <div class="content col-xs-10">
+    <div id="tableWrapper">
+      <h3>Projects worked on - </h3>
+      <table class="table-bordered table-striped" id="projectTable" width="100%">
+        <tr class="form-group">
+          <td>Project Name</td>
+          <td>Duration in months</td>
+          <td>Technologies</td>
+          <td>Actions</td>
+        </tr>
+      </table>
+    </div>
+    <h3>Add Projects - </h3>
+    <form>
+      <table class="table-striped">
+        <tr class="form-group">
+          <td><label>Project Name</label></td>
+          <td><input class="form-control" type="text" id="projectNameText" required="required"></td>
+        </tr>
+        <tr class="form-group">
+          <td><label>Duration in months</label></td>
+          <td><input class="form-control" type="number" id="durationText" required="required"></td>
+        </tr>
+        <tr class="form-group">
+          <td><label>Technologies</label></td>
+          <td><input class="form-control" type="text" id="technologiesText" required="required"></td>
+        </tr>
+        <tr class="form-group">
+          <td><button type="button" id="addProject" class="btn btn-primary" value="Add Project">Submit</button></td>
+          <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

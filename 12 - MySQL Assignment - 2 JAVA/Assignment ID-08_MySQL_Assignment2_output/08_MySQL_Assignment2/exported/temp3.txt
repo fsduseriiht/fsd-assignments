@@ -1,0 +1,10 @@
+SUBJECTID	SUBTITLE			DURATIONINHOURS	BOOKID	TITLE							PRICE	VOLUME	PUBLISHDATE	SUBJECTID
+1001		Hindi-Literature	100				205		"Hindi Prose-II"				88		1		1999-05-04	1001
+1001		Hindi-Literature	100				201		"Hindi Prose-I"					77		2		1987-07-01	1001
+1002		Geography-Primary	50				111		"Geography for Newbies Vol.I"	113		1		1998-09-01	1002
+1002		Geography-Primary	50				112		"Geography for Beginers vol2"	79		2		1999-07-01	1002
+1003		Physics(beginers)	45				401		"Physics for Newbies"			190		1		1987-02-09	1003
+1004		Hindi-Grammar		95				221		"Hindi Vyakaran-I"				44		1		2012-02-02	1004
+1004		Hindi-Grammar		95				220		"Hindi Vyakaran-II"				99		7		2013-05-06	1004
+1005		Geography-Advanced	44				113		"Advanced Geography"			199		3		2001-09-02	1005
+1006		Physics(advanced)	150				402		"Physics for Professionals"		301		2		1987-02-09	1006

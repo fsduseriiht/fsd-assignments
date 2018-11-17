@@ -1,0 +1,35 @@
+Assignment ID:07_CoreJava_Assignment3
+
+Deliverable Instructions
+1.Include the script or code snippets in a word document
+2.Paste the outputscreen shots in the very same word document
+3.Name the word document as <AssignmentId_EmpId_EmpName>
+
+Core Java - (JDBC)
+
+Consider the below entities 
+
+Subject
+	subjectId			long
+	subtitle			String
+	durationInHours		int
+	references			Set<Book>
+
+Book
+	bookId 				long
+	title 				String
+	price 				double
+	volume 				integer
+	publishDate 		LocalDate
+
+Develop a menu driven console based java application to facilitate the below operations 
+using JDBC DAO, and add sorting operations using Stream API
+	a.	Add a Book
+	b.	Delete a Subject
+	c.	Delete a book
+	d.	Search for a book
+	e.	Search for a subject
+	f.	Sort Book By Title
+	g.	Sort Subject By Subject Title
+	h.	Sort Books by publish Date
+	i.	Exit

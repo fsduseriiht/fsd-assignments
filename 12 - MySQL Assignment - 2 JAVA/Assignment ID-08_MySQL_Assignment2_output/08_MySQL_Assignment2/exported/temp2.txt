@@ -1,0 +1,6 @@
+BOOKID		TITLE							PRICE	VOLUME	PUBLISHDATE	SUBJECTID
+205			"Hindi Prose-II"				88		1		1999-05-04	1001
+111			"Geography for Newbies Vol.I"	113		1		1998-09-01	1002
+112			"Geography for Beginers vol2"	79		2		1999-07-01	1002
+221			"Hindi Vyakaran-I"				44		1		2012-02-02	1004
+113			"Advanced Geography"			199		3		2001-09-02	1005

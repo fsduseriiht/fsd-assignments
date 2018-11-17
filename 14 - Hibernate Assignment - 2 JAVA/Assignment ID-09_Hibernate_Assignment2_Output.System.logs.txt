@@ -1,0 +1,219 @@
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Sort Books By Title
+h.	Sort Subjects By Subject Title
+i.	Sort Books by Publish Date
+j.	Exit
+==========================================================
+Value = g
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Nov 04, 2018 4:57:24 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+Nov 04, 2018 4:57:24 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+Nov 04, 2018 4:57:24 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Nov 04, 2018 4:57:24 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Nov 04, 2018 4:57:24 PM org.hibernate.cfg.Configuration configure
+INFO: HHH000043: Configuring from resource: hibernate.cfg.xml
+Nov 04, 2018 4:57:24 PM org.hibernate.cfg.Configuration getConfigurationInputStream
+INFO: HHH000040: Configuration resource: hibernate.cfg.xml
+Nov 04, 2018 4:57:25 PM org.hibernate.cfg.Configuration addResource
+INFO: HHH000221: Reading mappings from resource: resources/mapping/SubjectEntity.hbm.xml
+Nov 04, 2018 4:57:25 PM org.hibernate.cfg.Configuration addResource
+INFO: HHH000221: Reading mappings from resource: resources/mapping/BookEntity.hbm.xml
+Nov 04, 2018 4:57:25 PM org.hibernate.cfg.Configuration doConfigure
+INFO: HHH000041: Configured SessionFactory: null
+Hibernate Configuration loaded
+Hibernate serviceRegistry created
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/fsd_hibernate?createDatabaseIfNotExist=true]
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=root, password=****}
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Nov 04, 2018 4:57:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+Nov 04, 2018 4:57:25 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Nov 04, 2018 4:57:25 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: fsd_hibernate.book_table
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [volume, price, publishdate, title, subjectid, bookid]
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fk_q2n209eenkbrwikero2w2e9j4]
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [fk_q2n209eenkbrwikero2w2e9j4, primary]
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: fsd_hibernate.subject_table
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [subtitle, durationinhours, subjectid]
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+Nov 04, 2018 4:57:26 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+Input value "g" received...
+
+
+
+==========================================================
+Operation - Sort Book By Title
+==========================================================
+Inside ApplicationController.searchBook() start
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+     4	             Geography for Beginers vol2	  79.0	         2	01-07-1999
+     3	             Geography for Newbies Vol.I	 113.0	         1	01-09-1998
+     2	                           Hindi Prose-I	  77.0	         2	01-07-1987
+     1	                          Hindi Prose-II	  88.0	         1	04-05-1999
+     6	               Learning Guitar - PART-II	 100.0	         1	11-12-2000
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Sort Books By Title
+h.	Sort Subjects By Subject Title
+i.	Sort Books by Publish Date
+j.	Exit
+==========================================================
+Value = h
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Input value "h" received...
+
+
+
+==========================================================
+Operation - Sort Subject By Subject Title
+==========================================================
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() start
+Hibernate: select subjectent0_.SUBJECTID as SUBJECTI1_1_, subjectent0_.SUBTITLE as SUBTITLE2_1_, subjectent0_.DURATIONINHOURS as DURATION3_1_ from SUBJECT_TABLE subjectent0_ order by subjectent0_.SUBJECTID asc
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+Hibernate: select references0_.SUBJECTID as SUBJECTI6_1_0_, references0_.BOOKID as BOOKID1_0_0_, references0_.BOOKID as BOOKID1_0_1_, references0_.TITLE as TITLE2_0_1_, references0_.PRICE as PRICE3_0_1_, references0_.VOLUME as VOLUME4_0_1_, references0_.PUBLISHDATE as PUBLISHD5_0_1_, references0_.SUBJECTID as SUBJECTI6_0_1_ from BOOK_TABLE references0_ where references0_.SUBJECTID=?
+HibernateApplicationDAO : subjectEntityList = [SubjectEntity [subjectId=1, subtitle=Hindi-Literature, durationInHours=100, references=[BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0]]], SubjectEntity [subjectId=2, subtitle=Geography-Primary, durationInHours=50, references=[BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0]]], SubjectEntity [subjectId=6, subtitle=History, durationInHours=19, references=[]]]
+Inside HibernateApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     2	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+     1	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+     6	             History	      19	No Books Selected
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Sort Books By Title
+h.	Sort Subjects By Subject Title
+i.	Sort Books by Publish Date
+j.	Exit
+==========================================================
+Value = i
+HibernateApplicationDAO : Setting the Hibernate Session Factory in HibernateApplicationDAO
+Input value "i" received...
+
+
+
+==========================================================
+Operation - Sort Books by publish Date
+==========================================================
+Inside ApplicationController.searchBook() start
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Hibernate: select bookentity0_.BOOKID as BOOKID1_0_, bookentity0_.TITLE as TITLE2_0_, bookentity0_.PRICE as PRICE3_0_, bookentity0_.VOLUME as VOLUME4_0_, bookentity0_.PUBLISHDATE as PUBLISHD5_0_, bookentity0_.SUBJECTID as SUBJECTI6_0_ from BOOK_TABLE bookentity0_ order by bookentity0_.BOOKID asc
+HibernateApplicationDAO : bookEntityList = [BookEntity [bookId=1, title=Hindi Prose-II, price=88.0, volume=1, publishDate=1999-05-04, subjectId=0], BookEntity [bookId=2, title=Hindi Prose-I, price=77.0, volume=2, publishDate=1987-07-01, subjectId=0], BookEntity [bookId=3, title=Geography for Newbies Vol.I, price=113.0, volume=1, publishDate=1998-09-01, subjectId=0], BookEntity [bookId=4, title=Geography for Beginers vol2, price=79.0, volume=2, publishDate=1999-07-01, subjectId=0], BookEntity [bookId=6, title=Learning Guitar - PART-II, price=100.0, volume=1, publishDate=2000-12-11, subjectId=0]]
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+     2	                           Hindi Prose-I	  77.0	         2	01-07-1987
+     3	             Geography for Newbies Vol.I	 113.0	         1	01-09-1998
+     1	                          Hindi Prose-II	  88.0	         1	04-05-1999
+     4	             Geography for Beginers vol2	  79.0	         2	01-07-1999
+     6	               Learning Guitar - PART-II	 100.0	         1	11-12-2000
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Sort Books By Title
+h.	Sort Subjects By Subject Title
+i.	Sort Books by Publish Date
+j.	Exit
+==========================================================
+Value = j
+Input value "j" received...
+
+
+
+
+Exiting the program...
+--------------------
+HibernateApplicationDAO : Un-Setting the Hibernate Session Factory in HibernateApplicationDAO
+Nov 04, 2018 4:58:46 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop
+INFO: HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/fsd_hibernate?createDatabaseIfNotExist=true]
+SessionFactory is now closed...
+HibernateApplicationDAO : Un-Setting the Hibernate Session Factory in HibernateApplicationDAO
+HibernateApplicationDAO : Un-Setting the Hibernate Session Factory in HibernateApplicationDAO
+HibernateApplicationDAO : Un-Setting the Hibernate Session Factory in HibernateApplicationDAO
+

@@ -1,0 +1,753 @@
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = a
+Input value "a" received...
+
+
+
+==========================================================
+Operation - Add a Subject
+==========================================================
+Enter the Subject details :: 
+Enter the Subject Id (only numbers) :: 1005
+Enter the Subject sub-title :: Geography-Advanced
+Enter the Subject Duration in Hours (only numbers) :: 44
+Select the Book references(Book Id) from the menu below (Seperated by semi-colon ";") :: 
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   201	                           Hindi Prose-I	  77.0	         2	01-07-1987
+   205	                          Hindi Prose-II	  88.0	         1	04-05-1999
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   221	                        Hindi Vyakaran-I	  44.0	         1	02-02-2012
+   220	                       Hindi Vyakaran-II	  99.0	         7	06-05-2013
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+Enter Book ID (only numbers seperated by semi-colon ";") :- 113
+Inside ApplicationController.addSubject() start
+Inside ApplicationService.addSubjectToStorage() start
+Inside ApplicationDAO.addSubjectToDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.addSubjectToDB() end
+Inside ApplicationService.addSubjectToStorage() end
+Subject Added...
+Inside ApplicationController.addSubject() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = b
+Input value "b" received...
+
+
+
+==========================================================
+Operation - Add a Book
+==========================================================
+Enter details of Book to be added...
+Enter the Book Id (only numbers) :: 301
+Enter the Book title :: Wren & Martin
+Enter the Book price (only numbers [decimal]) :: 89.88
+Enter the Book Volume (only numbers) :: 1
+Enter the Book Publish Date (format = "dd-MM-yyyy") :: 09-02-1987
+Inside ApplicationController.addBook() start
+Inside ApplicationService.addBookToStorage() start
+Inside ApplicationDAO.addBookToDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.addBookToDB() end
+Inside ApplicationService.addBookToStorage() end
+Book Added...
+Inside ApplicationController.addBook() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = b
+Input value "b" received...
+
+
+
+==========================================================
+Operation - Add a Book
+==========================================================
+Enter details of Book to be added...
+Enter the Book Id (only numbers) :: 999
+Enter the Book title :: Book_To_Delete
+Enter the Book price (only numbers [decimal]) :: 11.11
+Enter the Book Volume (only numbers) :: 1
+Enter the Book Publish Date (format = "dd-MM-yyyy") :: 01-01-2018
+Inside ApplicationController.addBook() start
+Inside ApplicationService.addBookToStorage() start
+Inside ApplicationDAO.addBookToDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.addBookToDB() end
+Inside ApplicationService.addBookToStorage() end
+Book Added...
+Inside ApplicationController.addBook() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = a
+Input value "a" received...
+
+
+
+==========================================================
+Operation - Add a Subject
+==========================================================
+Enter the Subject details :: 
+Enter the Subject Id (only numbers) :: 9999
+Enter the Subject sub-title :: Subject_To_Delete
+Enter the Subject Duration in Hours (only numbers) :: 11
+Select the Book references(Book Id) from the menu below (Seperated by semi-colon ";") :: 
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   201	                           Hindi Prose-I	  77.0	         2	01-07-1987
+   205	                          Hindi Prose-II	  88.0	         1	04-05-1999
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   221	                        Hindi Vyakaran-I	  44.0	         1	02-02-2012
+   220	                       Hindi Vyakaran-II	  99.0	         7	06-05-2013
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+   301	                           Wren & Martin	 89.88	         1	09-02-1987
+   999	                          Book_To_Delete	 11.11	         1	01-01-2018
+Enter Book ID (only numbers seperated by semi-colon ";") :- 999
+Inside ApplicationController.addSubject() start
+Inside ApplicationService.addSubjectToStorage() start
+Inside ApplicationDAO.addSubjectToDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.addSubjectToDB() end
+Inside ApplicationService.addSubjectToStorage() end
+Subject Added...
+Inside ApplicationController.addSubject() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = c
+Input value "c" received...
+
+
+
+==========================================================
+Operation - Delete a Subject
+==========================================================
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside ApplicationDAO.getAllSubjectsFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Showing all existing Books...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1002	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+  9999	   Subject_To_Delete	      11	[Book_To_Delete]
+Select the Subject Id to delete (only numbers) ::9999
+Subject with subject Id [9999] going to be deleted...
+Inside ApplicationController.deleteSubject() start
+Inside ApplicationService.deleteSubjectFromStorage() start
+Inside ApplicationDAO.deleteSubjectFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.deleteSubjectFromDB() end
+Inside ApplicationService.deleteSubjectFromStorage() end
+Subject Deleted...
+Inside ApplicationController.deleteSubject() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = c
+Input value "c" received...
+
+
+
+==========================================================
+Operation - Delete a Subject
+==========================================================
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside ApplicationDAO.getAllSubjectsFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Showing all existing Books...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1002	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+Select the Subject Id to delete (only numbers) ::101
+Subject with subject Id [101] will not be deleted as subject is not found...
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+3
+Displaying All Books...
+Inside ApplicationController.searchBook() start
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   201	                           Hindi Prose-I	  77.0	         2	01-07-1987
+   205	                          Hindi Prose-II	  88.0	         1	04-05-1999
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   221	                        Hindi Vyakaran-I	  44.0	         1	02-02-2012
+   220	                       Hindi Vyakaran-II	  99.0	         7	06-05-2013
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+   301	                           Wren & Martin	 89.88	         1	09-02-1987
+   999	                          Book_To_Delete	 11.11	         1	01-01-2018
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Displaying All Subjects...
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside ApplicationDAO.getAllSubjectsFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1002	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = d
+Input value "d" received...
+
+
+
+==========================================================
+Operation - Delete a Book
+==========================================================
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Showing all existing Books...
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   201	                           Hindi Prose-I	  77.0	         2	01-07-1987
+   205	                          Hindi Prose-II	  88.0	         1	04-05-1999
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   221	                        Hindi Vyakaran-I	  44.0	         1	02-02-2012
+   220	                       Hindi Vyakaran-II	  99.0	         7	06-05-2013
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+   301	                           Wren & Martin	 89.88	         1	09-02-1987
+   999	                          Book_To_Delete	 11.11	         1	01-01-2018
+Select the Book Id to delete (only numbers) ::999
+Book with subject Id [999] going to be deleted...
+Inside ApplicationController.deleteBook() start
+Inside ApplicationService.deleteBookFromStorage() start
+Inside ApplicationDAO.deleteBookFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.deleteBookFromDB() end
+Inside ApplicationService.deleteBookFromStorage() end
+Book Deleted...
+Inside ApplicationController.deleteBook() end
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+3
+Displaying All Books...
+Inside ApplicationController.searchBook() start
+Inside ApplicationController.getAllBooks() start
+Inside ApplicationService.getAllBooksFromStorage() start
+Inside ApplicationDAO.getAllBooksFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllBooksFromDB() end
+Inside ApplicationService.getAllBooksFromStorage() end
+Inside ApplicationController.getAllBooks() end
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   201	                           Hindi Prose-I	  77.0	         2	01-07-1987
+   205	                          Hindi Prose-II	  88.0	         1	04-05-1999
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   221	                        Hindi Vyakaran-I	  44.0	         1	02-02-2012
+   220	                       Hindi Vyakaran-II	  99.0	         7	06-05-2013
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+   301	                           Wren & Martin	 89.88	         1	09-02-1987
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+1
+Enter the Book Id to search (only numbers) ::301
+Inside ApplicationController.searchBook() start
+Inside ApplicationService.searchBookById() start
+Inside ApplicationDAO.searchBookByIdFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.searchBookByIdFromDB() end
+Inside ApplicationService.searchBookById() end
+Book Found...
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   301	                           Wren & Martin	 89.88	         1	09-02-1987
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+2
+Enter the Book title :: geograp
+Inside ApplicationController.searchBook() start
+Inside ApplicationService.searchBookByTitleFromStorage() start
+Inside ApplicationDAO.searchBookByTitleFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.searchBookByTitleFromDB() end
+Inside ApplicationService.searchBookByTitleFromStorage() end
+Book Found...
+Inside ApplicationController.searchBook() end
+Book Details : 
+    ID	                                   TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	                    --------------------	------	----------	------------
+   111	             Geography for Newbies Vol.I	112.88	         1	01-09-1998
+   112	             Geography for Beginers vol2	 78.88	         2	01-07-1999
+   113	                      Advanced Geography	198.78	         3	02-09-2001
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Displaying All Subjects...
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside ApplicationDAO.getAllSubjectsFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1002	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+1
+Enter the Subject Id to search (only numbers) ::1005
+Inside ApplicationController.searchSubject() start
+Inside ApplicationService.searchSubjectByIdFromStorage() start
+Inside ApplicationDAO.searchSubjectByIdFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.searchSubjectByIdFromDB() end
+Inside ApplicationService.searchSubjectByIdFromStorage() end
+Subject Found...
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+2
+Enter the Subject title :: hind
+Inside ApplicationController.searchSubject() start
+Inside ApplicationService.searchSubjectByTitleFromStorage() start
+Inside ApplicationDAO.searchSubjectByTitleFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.searchSubjectByTitleFromDB() end
+Inside ApplicationService.searchSubjectByTitleFromStorage() end
+Subject Found...
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Displaying All Subjects...
+Inside ApplicationController.searchSubject() start
+Inside ApplicationController.getAllSubjects() start
+Inside ApplicationService.getAllSubjectsFromStorage() start
+Inside ApplicationDAO.getAllSubjectsFromDB() start
+Connecting to database...
+Closing database connection...
+Connection Closed...
+Inside ApplicationDAO.getAllSubjectsFromDB() end
+Inside ApplicationService.getAllSubjectsFromStorage() end
+Inside ApplicationController.getAllSubjects() end
+Inside ApplicationController.searchSubject() end
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+  1001	    Hindi-Literature	     100	[Hindi Prose-I; Hindi Prose-II]
+  1002	   Geography-Primary	      50	[Geography for Newbies Vol.I; Geography for Beginers vol2]
+  1004	       Hindi-Grammar	      95	[Hindi Vyakaran-I; Hindi Vyakaran-II]
+  1005	  Geography-Advanced	      44	[Advanced Geography]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = anyvalue
+Invalid Input... Please try again...
+
+
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = g
+Input value "g" received...
+
+
+
+
+Exiting the program...
+--------------------

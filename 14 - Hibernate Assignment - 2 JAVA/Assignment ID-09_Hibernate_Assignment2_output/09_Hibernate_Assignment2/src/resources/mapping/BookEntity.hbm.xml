@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cts.fsd.entity">
+	<class name="BookEntity" table="BOOK_TABLE">
+
+		<id name="bookId" type="long">
+			<column name="BOOKID" />
+			<generator class="identity" />
+		</id>
+
+
+		<property name="title" type="string">
+			<column name="TITLE" />
+		</property>
+
+
+		<property name="price" type="double">
+			<column name="PRICE" />
+		</property>
+
+
+		<property name="volume" type="integer">
+			<column name="VOLUME" />
+		</property>
+
+
+		<property name="publishDate" type="date">
+			<column name="PUBLISHDATE" />
+		</property>
+
+
+		<many-to-one name="subjectEntity" class="SubjectEntity" ><!-- cascade="all" -->
+			<column name="SUBJECTID"></column>
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

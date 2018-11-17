@@ -1,0 +1,11 @@
+BOOKID		TITLE							PRICE		VOLUME		PUBLISHDATE		SUBJECTID
+402			"Physics for Professionals"		301			2			1987-02-09		1006
+401			"Physics for Newbies"			190			1			1987-02-09		1003
+301			"Wren & Martin"					90			1			1987-02-09		NULL
+201			"Hindi Prose-I"					77			2			1987-07-01		1001
+111			"Geography for Newbies Vol.I"	113			1			1998-09-01		1002
+205			"Hindi Prose-II"				88			1			1999-05-04		1001
+112			"Geography for Beginers vol2"	79			2			1999-07-01		1002
+113			"Advanced Geography"			199			3			2001-09-02		1005
+221			"Hindi Vyakaran-I"				44			1			2012-02-02		1004
+220			"Hindi Vyakaran-II"				99			7			2013-05-06		1004

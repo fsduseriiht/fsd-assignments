@@ -1,0 +1,366 @@
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = b
+Input value "b" received...
+
+
+
+==========================================================
+Operation - Add a Book
+==========================================================
+Enter the Book details :: 
+Enter the Book Id (only numbers) :: 845
+Enter the Book title :: hindi-grammar
+Enter the Book price (only numbers [decimal]) :: 99
+Enter the Book Volume (only numbers) :: 8
+Enter the Book Publish Date (format = "dd-MM-yyyy") :: 05-04-1952
+Books Added = 
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = c
+Input value "c" received...
+
+
+
+==========================================================
+Operation - Delete a Subject
+==========================================================
+Showing all existing Subjects...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     1	                   1	       1	[1]
+     2	                sub2	      22	[2; qqqq]
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+   777	          Literature	      56	[1; 2]
+   888	               Hindi	     100	[qqqq; ProseBook1]
+Select the Subject Id to delete (only numbers) ::888
+Book with subject Id [888] deleted...
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = d
+Input value "d" received...
+
+
+
+==========================================================
+Operation - Delete a Book
+==========================================================
+Showing all existing Books...
+Book Details : 
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     1	                   1	   1.0	         1	01-Feb-2013
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+Select the Book Id to delete (only numbers) ::1
+Book with book id [1] deleted...
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+1
+Enter the Book Id to search (only numbers) ::845
+Searching...
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+2
+Enter the Book title :: hi
+Searching...
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+3
+    ID	               TITLE	 PRICE	    VOLUME	PUBLISH DATE
+------	--------------------	------	----------	------------
+     2	                   2	   2.2	         2	02-Feb-2012
+     3	                qqqq	  33.0	         3	03-Mar-2011
+   111	        HistoryBook1	 100.5	         2	01-Feb-1995
+   222	          MathsBook2	 50.05	         5	01-Mar-1985
+   333	           Geograpgy	 70.77	         4	01-Aug-1988
+   100	          ProseBook1	 100.0	         2	02-May-2000
+   101	         hindi-prose	 88.88	         3	02-Aug-1987
+   845	       hindi-grammar	  99.0	         8	05-Apr-1952
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = e
+Input value "e" received...
+
+
+
+==========================================================
+Operation - Search a Book
+==========================================================
+Select [1] to search by book id
+Select [2] to search by book title
+Select [3] to display all books
+Select [4] to exit search...
+4
+Exiting Search Books...
+
+
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+1
+Enter the Subject Id to search (only numbers) ::800
+Searching...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+   800	             History	     100	[1; 2; qqqq]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+2
+Enter the Subject title :: h
+Searching...
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+3
+Subject Details : 
+    ID	               TITLE	Duration	Books To Refer
+------	--------------------	--------	--------------
+     1	                   1	       1	[1]
+     2	                sub2	      22	[2; qqqq]
+   800	             History	     100	[1; 2; qqqq]
+   987	               Maths	     200	[1]
+   500	           chemistry	      50	[1; 2]
+   777	          Literature	      56	[1; 2]
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = f
+Input value "f" received...
+
+
+
+==========================================================
+Operation - Search a Subject
+==========================================================
+Select [1] to search by subject id
+Select [2] to search by subject title
+Select [3] to display all subjects
+Select [4] to exit search...
+4
+Exiting Search Books...
+
+
+--------------------
+==========================================================
+Please select one of the below options to proceed...
+==========================================================
+a.	Add a Subject
+b.	Add a Book
+c.	Delete a Subject
+d.	Delete a book
+e.	Search for a book
+f.	Search for a subject
+g.	Exit
+==========================================================
+Value = g
+Input value "g" received...
+
+
+Exiting the program...
+--------------------
