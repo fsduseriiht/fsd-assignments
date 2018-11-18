@@ -1,0 +1,11 @@
+.minPriority {
+    float: left;
+}
+
+.maxPriority {
+   float: right; 
+}
+
+.heading {
+	font-size: x-large;
+}

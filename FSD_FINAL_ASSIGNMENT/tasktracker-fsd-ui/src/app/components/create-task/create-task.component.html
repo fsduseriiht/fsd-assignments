@@ -1,0 +1,94 @@
+<form [formGroup]="myForm" (submit)="onSubmit()">
+  <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heading">
+                  <p *ngIf="!editedTaskId">
+                      Add Task
+                  </p>
+                  <p *ngIf="editedTaskId">
+                      Update Task
+                  </p>
+              </div>
+          </div>
+          <div class="row form-group">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <p>
+                      Task:
+                  </p>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <input type="text" class="form-control" formControlName="task" [(ngModel)]="taskName"/>
+                  <span [hidden]="myForm.controls.task.valid || (myForm.controls.task.pristine && !submitted)">Please enter proper Task Name.</span>
+              </div>
+          </div>
+          <div class="row form-group">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <p>
+                      Priority:
+                  </p>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                 <span class="minPriority">{{minPriority}}</span>
+                 <span class="maxPriority">{{maxPriority}}</span>
+                  <input type="range" [(ngModel)]="priority" [max]="maxPriority" [min]="minPriority" class="form-control" formControlName="priority"/>
+                  <span [hidden]="myForm.controls.priority.valid || (myForm.controls.priority.pristine && !submitted)">Please select proper Priority.</span>
+              </div>
+          </div>
+          <div class="row form-group">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <p>
+                      Parent Task
+                  </p>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <select class="form-control" formControlName="parentTask" [(ngModel)]="parentTask">
+                      <option *ngFor="let task of (parentTasks$ | async)" [value]="task.parentId">
+                        {{task.parentTask}}
+                      </option>
+                  </select>
+                  <span [hidden]="myForm.controls.parentTask.valid || (myForm.controls.parentTask.pristine && !submitted)">Please enter proper category.</span>
+              </div>
+          </div>
+          <div class="row form-group">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <p>
+                      Start Date::
+                  </p>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <input type="date" class="form-control" formControlName="sdate" [(ngModel)]="startDate"/>
+                  <span [hidden]="myForm.controls.sdate.valid || (myForm.controls.sdate.pristine && !submitted)">Please enter proper Start Date.</span>
+              </div>
+          </div>
+          <div class="row form-group">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <p>
+                      End Date:
+                  </p>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                  <input type="date" class="form-control" formControlName="edate" [(ngModel)]="endDate"/>
+                  <span [hidden]="myForm.controls.edate.valid || (myForm.controls.edate.pristine && !submitted)">Please enter proper End Date.</span>
+              </div>
+          </div>
+          <div class="row form-group" *ngIf="!editedTaskId">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <button type="submit" class="btn btn-primary form-control">Add Task</button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <button type="reset" class="btn btn-primary form-control">Reset</button>
+              </div>
+          </div>
+          <div class="row form-group" *ngIf="editedTaskId">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <button type="submit" class="btn btn-primary form-control">Update Task</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <button type="button" class="btn btn-primary form-control" (click)="cancelEdit()">Cancel</button>
+            </div>
+        </div>
+      </div>
+      <br>
+  </div>
+</form>

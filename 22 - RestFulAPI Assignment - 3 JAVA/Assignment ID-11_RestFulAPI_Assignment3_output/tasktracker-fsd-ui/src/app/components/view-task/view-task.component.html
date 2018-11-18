@@ -1,0 +1,54 @@
+
+<div> 
+  <div class="row search-row-one">
+    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <label class="search-row-one-elem r1col-one">Task:</label>
+      <input class="search-row-one-elem r1col-two" type="text" (input)="updateTaskNameModel($event)" [value]="taskName" placeholder="Search By Task" >
+    </span>
+    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <label class="search-row-one-elem r1col-one">Parent Task:</label>
+      <input class="search-row-one-elem r1col-two" type="text" (input)="updateParentTaskModel($event)" [value]="parentTaskName" placeholder="Search By Parent Task" >
+    </span>
+  </div>
+
+  <div class="row search-row-two">
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <label class="search-row-two-elem r2col-one">Priority From:</label>
+      <input class="search-row-two-elem r2col-two" type="number" min="0" max="30" [value]="priorityFrom" (input)="updatePriorityFromModel($event)" >
+    </span>
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <label class="search-row-two-elem r2col-one">Priority To:</label>
+      <input class="search-row-two-elem r2col-two" type="number" min="0" max="30" [value]="priorityTo" (input)="updatePriorityToModel($event)" >  
+    </span>
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <label class="search-row-two-elem r2col-one">Start Date:</label>
+      <input class="search-row-two-elem r2col-two" type="date" [value]="startDate" (input)="updateStartDateModel($event)" >
+    </span>
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <label class="search-row-two-elem r2col-one">End Date:</label>
+      <input class="search-row-two-elem r2col-two" type="date" [value]="endDate" (input)="updateEndDateModel($event)" >
+    </span>
+  </div>
+</div>
+<hr>
+<div *ngFor="let task of (tasks$ | async) | searchContent: taskName:parentTaskName:priorityFrom:priorityTo:startDate:endDate">
+  <div class="row heading">
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Task</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Parent</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Priority</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Start</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">End</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></span>
+  </div>
+  <div class="row">
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ task.task }}</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ task.parentTask }}</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ task.priority }}</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ getDate(task.startDate) }}</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">{{ getDate(task.endDate) }}</span>
+    <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <span> <a [routerLink]="['/edit', task.taskId]">Edit</a></span>
+      <span><button type="button" class="btn btn-link" (click)="endTask(task.taskId)" >End Task</button></span>
+    </span>
+  </div>
+</div>
