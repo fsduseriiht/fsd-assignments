@@ -1,0 +1,47 @@
+.form-group {
+  width: 500px;
+}
+
+.form-group td {
+  width: 100px;
+}
+
+.form-group .error {
+  width: 200px;
+  color: red;
+}
+
+table {
+  overflow: auto;
+  height: 200px;
+  display: block;
+  border: 1px solid darkgray;
+  padding: 10px;
+}
+
+table thead tr {
+  background: #eee;
+  text-align: center;
+}
+
+.action {
+  text-align: center;
+  color: slateblue;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+input {
+  width: 300px;
+}
+
+textarea {
+  width: 300px
+}

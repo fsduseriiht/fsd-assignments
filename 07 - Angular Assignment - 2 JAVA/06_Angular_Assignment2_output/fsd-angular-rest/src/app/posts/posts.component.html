@@ -1,0 +1,50 @@
+<div class="content col-xs-10">
+  <div id="tableWrapper">
+    <h3>User posts </h3>
+    <table width="100%">
+      <thead><tr class="form-group">
+        <td>Post id</td>
+        <td>User Id</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Update</td>
+        <td>Delete</td>
+      </tr></thead>
+      <tr *ngFor="let post of postsDetails; let postIndex = index">
+        <td class="clickable center" (click)="clickPost(post)">{{post.id}}</td>
+        <td class="clickable center" (click)="clickPost(post)">{{userNames[post.userId]}}</td>
+        <td class="clickable" (click)="clickPost(post)">{{post.title}}</td>
+        <td class="clickable" (click)="clickPost(post)">{{post.body}}</td>
+        <td class="action" (click)="loadPost(post)">>></td>
+        <td class="action" (click)="deletePost(post)">X</td>
+      </tr>
+    </table>
+  </div>
+  <h3>Write to post!</h3>
+  <form [formGroup]="postForm">
+    <table>
+      <tr class="form-group">
+        <td><label>Users</label></td>
+        <td>
+          <select formControlName="userId" class='select-option' required [(ngModel)]='optionSelected' (change)='onOptionsSelected($event)'>
+            <option class='option' *ngFor='let option of userNames' [value]="option">{{option}}</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Title</label></td>
+        <td><input formControlName="title" [(ngModel)]='title' class="form-control" type="text" id="title" required="required"></td>
+        <td><div class="error" *ngIf="(postForm.controls.title.dirty || postForm.controls.title.touched) && postForm.controls.title.errors !== null">Please enter valid title</div></td>  
+      </tr>
+      <tr class="form-group">
+        <td><label>Description</label></td>
+        <td><textarea formControlName="body" [(ngModel)]='body' class="form-control" id="body" required="required"></textarea>
+        <td><div class="error" *ngIf="(postForm.controls.body.dirty || postForm.controls.body.touched) && postForm.controls.body.errors !== null">Please enter valid description</div></td>  
+      </tr>
+      <tr class="form-group">
+        <td><button type="button" (click)="addOrUpdatePost()" class="btn btn-primary">Submit</button></td>
+        <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
