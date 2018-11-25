@@ -1,0 +1,43 @@
+<div class="content col-xs-10">
+  <div id="tableWrapper" *ngIf="projectsList.length">
+    <h3>Projects worked on - </h3>
+    <table class="table-bordered table-striped" id="projectTable" width="100%">
+      <tr class="form-group">
+        <td>Project Name</td>
+        <td>Duration in months</td>
+        <td>Technologies</td>
+        <td>Actions</td>
+      </tr>
+      <tr *ngFor="let project of projectsList">
+        <td>{{project.projectName}}</td>
+        <td>{{project.duration}}</td>
+        <td>{{project.technologies}}</td>
+        <td class="delete_icon" (click)="deleteProject(project)">X</td>
+      </tr>
+    </table>
+  </div>
+  <h3>Add Projects - </h3>
+  <form [formGroup]="projectForm">
+    <table>
+      <tr class="form-group">
+        <td><label>Project Name</label></td>
+        <td><input formControlName="projectName" class="form-control" type="text" id="projectNameText" required="required"></td>
+        <td><div *ngIf="(projectForm.controls.projectName.dirty || projectForm.controls.projectName.touched) && projectForm.controls.projectName.errors !== null">Please enter valid project name</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Duration in months</label></td>
+        <td><input formControlName="duration" class="form-control" type="number" id="durationText" required="required"></td>
+        <td><div *ngIf="(projectForm.controls.duration.dirty || projectForm.controls.duration.touched) && projectForm.controls.duration.errors !== null">Please enter valid duration</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Technologies</label></td>
+        <td><input formControlName="technologies" class="form-control" type="text" id="technologiesText" required="required"></td>
+        <td><div *ngIf="(projectForm.controls.technologies.dirty || projectForm.controls.technologies.touched) && projectForm.controls.technologies.errors !== null">Please enter valid technologies</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><button type="button" (click)="addProject()" [disabled]="!projectForm.valid" id="addProject" class="btn btn-primary" value="Add Project">Submit</button></td>
+        <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

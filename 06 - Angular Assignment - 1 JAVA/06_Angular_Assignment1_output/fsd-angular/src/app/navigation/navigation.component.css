@@ -1,0 +1,25 @@
+nav {
+  width: 20%;
+  float: left;
+  height: 330px;
+}
+
+nav a {
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 8%;
+  display: block;
+  text-align: center;
+  background: #ccdce0;
+  color: #7d3636;
+  margin-bottom: 12px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+
+section {
+  margin-bottom: 10px;
+}

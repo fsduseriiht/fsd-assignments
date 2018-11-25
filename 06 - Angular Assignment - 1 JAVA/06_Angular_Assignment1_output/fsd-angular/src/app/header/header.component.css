@@ -1,0 +1,11 @@
+header.jumbotron {
+  background: cadetblue;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h2 {
+  float: left;
+  width: 90%;
+}

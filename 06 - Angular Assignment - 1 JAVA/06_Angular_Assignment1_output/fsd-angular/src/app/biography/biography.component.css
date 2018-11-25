@@ -1,0 +1,19 @@
+.content {
+  margin-left: 5%;
+  margin-right: 2%;
+  float: left;
+  width: 70%;
+  text-align: justify;
+}
+
+#tableWrapper {
+  margin-bottom: 15px;
+}
+
+.delete_icon {
+  color: red;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}

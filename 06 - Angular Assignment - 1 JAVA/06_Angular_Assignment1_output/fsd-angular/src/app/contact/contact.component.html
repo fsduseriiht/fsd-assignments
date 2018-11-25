@@ -1,0 +1,31 @@
+<div class="content col-xs-10">
+  <h3>Contact Me - </h3>
+  <form [formGroup]="contactForm">
+    <table>
+      <tr class="form-group">
+        <td><label>Visitor's Name: </label></td>
+        <td><input formControlName="name" class="form-control" type="text" pattern="[A-Za-z ]{2,}" placeholder="Enter minimum two char"></td>
+        <td><div *ngIf="(contactForm.controls.name.dirty || contactForm.controls.name.touched) && contactForm.controls.name.errors !== null">Please enter valid name</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Mobile: </label></td>
+        <td><input formControlName="mobile" class="form-control" type="number" maxlength="10" placeholder="Enter valid mobile"></td>
+        <td><div *ngIf="(contactForm.controls.mobile.dirty || contactForm.controls.mobile.touched) && contactForm.controls.mobile.errors !== null">Please enter valid mobile number</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Email Id: </label></td>
+        <td><input formControlName="email" class="form-control" type="email" placeholder="Enter valid email"></td>
+        <td><div *ngIf="(contactForm.controls.email.dirty || contactForm.controls.email.touched) && contactForm.controls.email.errors !== null">Please enter valid email</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label class="remarks">Remarks: </label></td>
+        <td><textarea formControlName="remarks" class="form-control" placeholder="Enter remarks here..." rows="10" cols="50"></textarea></td>
+        <td><div *ngIf="(contactForm.controls.remarks.dirty || contactForm.controls.remarks.touched) && contactForm.controls.remarks.errors !== null">Please enter valid remarks</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><button type="button" (click)="addMessage()" class="btn btn-primary" value="Submit">Submit</button></td>
+        <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

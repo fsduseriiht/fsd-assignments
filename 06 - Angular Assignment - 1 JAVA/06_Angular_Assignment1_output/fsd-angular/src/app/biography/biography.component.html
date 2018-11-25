@@ -1,0 +1,57 @@
+<div class="content col-xs-10">
+  <div id="tableWrapper" *ngIf="detailsList.length">
+    <h3>Educational Qualifications - </h3>
+    <table class="table-bordered table-striped" id="qualificationTable" width="100%">
+      <tr class="form-group">
+        <td>Degree</td>
+        <td>Name Of Institute</td>
+        <td>Place</td>
+        <td>Year of Passing</td>
+        <td>% Marks Obtained</td>
+        <td>Actions</td>
+      </tr>
+      <tr *ngFor="let user of detailsList">
+        <td>{{user.degree}}</td>
+        <td>{{user.instituteName}}</td>
+        <td>{{user.institutePlace}}</td>
+        <td>{{user.yearOfPassing}}</td>
+        <td>{{user.marksObtained}}</td>
+        <td class="delete_icon" (click)="deleteDetails(user)">X</td>
+      </tr>
+    </table>
+  </div>
+  <h3>Add Educational Qualification Below - </h3>
+  <form [formGroup]="bioForm">
+    <table>
+      <tr class="form-group">
+        <td><label>Degree</label></td>
+        <td><input formControlName="degree" class="form-control" type="text" id="degreeText" required="required"></td>
+        <td><div *ngIf="(bioForm.controls.degree.dirty || bioForm.controls.degree.touched) && bioForm.controls.degree.errors !== null">Please enter valid degree</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Name Of Institute</label></td>
+        <td><input formControlName="instituteName" class="form-control" type="text" id="instituteNameText" required="required"></td>
+        <td><div *ngIf="(bioForm.controls.instituteName.dirty || bioForm.controls.instituteName.touched) && bioForm.controls.instituteName.errors !== null">Please enter valid institute name</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Place</label></td>
+        <td><input formControlName="institutePlace" class="form-control" type="text" id="institutePlaceText" required="required"></td>
+        <td><div *ngIf="(bioForm.controls.institutePlace.dirty || bioForm.controls.institutePlace.touched) && bioForm.controls.institutePlace.errors !== null">Please enter valid institute place</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>Year of Passing</label></td>
+        <td><input formControlName="yearOfPassing" class="form-control" type="number" id="yearOfPassingText" required="required" ></td>
+        <td><div *ngIf="(bioForm.controls.yearOfPassing.dirty || bioForm.controls.yearOfPassing.touched) && bioForm.controls.yearOfPassing.errors !== null">Please enter valid year of passing</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><label>% Marks Obtained</label></td>
+        <td><input formControlName="marksObtained" class="form-control" type="number" id="marksObtainedText" required="required"></td>
+        <td><div *ngIf="(bioForm.controls.marksObtained.dirty || bioForm.controls.marksObtained.touched) && bioForm.controls.marksObtained.errors !== null">Please enter valid marks</div></td>
+      </tr>
+      <tr class="form-group">
+        <td><button type="button" (click)="addDetails()" class="btn btn-primary" value="Add Qualification" id="addQualification">Submit</button></td>
+        <td><button type="reset" class="btn" value="Reset">Reset</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

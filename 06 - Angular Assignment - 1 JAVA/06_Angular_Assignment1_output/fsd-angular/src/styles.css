@@ -1,0 +1,31 @@
+.content {
+  margin-left: 5%;
+  margin-right: 2%;
+  float: left;
+  width: 60%;
+  text-align: justify;
+}
+
+.content h3 {
+  margin-top: 0;
+  color: #7d3636;
+  font-style: italic;
+}
+
+.content label {
+  color: #373333;
+}
+
+.content label.remarks {
+  font-style: italic;
+}
+
+.content table td {
+  padding: 5px;
+}
+
+.removeProject, .removeQualification, .removeExperience {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
