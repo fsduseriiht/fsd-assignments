@@ -1,0 +1,123 @@
+OPENSHIFT_JENKINS_JVM_ARCH='', CONTAINER_MEMORY_IN_MB='512', using /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.i386/jre/bin/java and /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.i386/bin/javac
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
+mkdir: cannot create directory ‘/var/lib/jenkins/logs’: File exists
+Disabling administrative monitors that contact the update center
+Migrating slave image configuration to current version tag ...
++ exec java -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xmx256m -Dfile.encoding=UTF8 -Djavamelody.displayed-counters=log,error -Duser.home=/var/lib/jenkins -Djavamelody.application-name=JENKINS -jar /usr/lib/jenkins/jenkins.war
+Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
+OpenJDK Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+Running from: /usr/lib/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Nov 25, 2018 3:04:33 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @696ms to org.eclipse.jetty.util.log.JavaUtilLog
+Nov 25, 2018 3:04:33 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Nov 25, 2018 3:04:33 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Nov 25, 2018 3:04:33 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
+Nov 25, 2018 3:04:34 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Nov 25, 2018 3:04:34 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Nov 25, 2018 3:04:34 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Nov 25, 2018 3:04:34 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: node0 Scavenging every 660000ms
+Jenkins home directory: /var/lib/jenkins found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Nov 25, 2018 3:04:36 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@5a729f{Jenkins v2.138.2,/,file:///var/lib/jenkins/war/,AVAILABLE}{/var/lib/jenkins/war}
+Nov 25, 2018 3:04:36 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@1919693{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+Nov 25, 2018 3:04:36 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @4415ms
+Nov 25, 2018 3:04:37 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+Nov 25, 2018 3:04:40 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Nov 25, 2018 3:04:41 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Nov 25, 2018 3:04:56 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Nov 25, 2018 3:04:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Nov 25, 2018 3:05:00 PM io.fabric8.jenkins.openshiftsync.GlobalPluginConfiguration configChange
+INFO: OpenShift Sync Plugin processing a newly supplied configuration
+Nov 25, 2018 3:05:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Nov 25, 2018 3:05:01 PM org.jenkinsci.plugins.matrixauth.AuthorizationContainer add
+WARNING: Tried to add inapplicable permission Permission[class hudson.model.Computer,Provision] for admin in hudson.security.GlobalMatrixAuthorizationStrategy@d04140, skipping
+Nov 25, 2018 3:05:01 PM io.fabric8.jenkins.openshiftsync.GlobalPluginConfiguration$1 doRun
+INFO: Confirming Jenkins is started
+Nov 25, 2018 3:05:01 PM jenkins.model.RunIdMigrator migrate
+INFO: Migrating build records in /var/lib/jenkins/jobs/OpenShift Sample/builds
+Nov 25, 2018 3:05:01 PM jenkins.model.RunIdMigrator migrate
+WARNING: Build record migration (https://jenkins.io/redirect/build-record-migration ) is one-way. If you need to downgrade Jenkins, run: java -classpath "/var/lib/jenkins/war/WEB-INF/lib/jenkins-core-2.138.2.jar:/var/lib/jenkins/war/WEB-INF/lib/commons-io-2.4.jar:/var/lib/jenkins/war/WEB-INF/lib/stapler-1.254.2.jar:/var/lib/jenkins/war/WEB-INF/lib/ant-1.9.2.jar:/var/lib/jenkins/war/WEB-INF/lib/commons-lang-2.6.jar" jenkins.model.RunIdMigrator "/var/lib/jenkins"
+Nov 25, 2018 3:05:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Nov 25, 2018 3:05:02 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Nov 25, 2018 3:05:02 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 25 ms
+Nov 25, 2018 3:05:03 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@1f21058: display name [Root WebApplicationContext]; startup date [Sun Nov 25 15:05:03 UTC 2018]; root of context hierarchy
+Nov 25, 2018 3:05:03 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@1f21058]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b7c17d
+Nov 25, 2018 3:05:03 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b7c17d: defining beans [filter,legacy]; root of factory hierarchy
+Nov 25, 2018 3:05:03 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Nov 25, 2018 3:05:03 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Nov 25, 2018 3:05:03 PM io.fabric8.jenkins.openshiftsync.BuildConfigWatcher start
+INFO: Now handling startup build configs!!
+Nov 25, 2018 3:05:03 PM io.fabric8.jenkins.openshiftsync.ConfigMapWatcher start
+INFO: Now handling startup config maps!!
+Nov 25, 2018 3:05:03 PM io.fabric8.jenkins.openshiftsync.ImageStreamWatcher start
+INFO: Now handling startup image streams!!
+Nov 25, 2018 3:05:03 PM io.fabric8.jenkins.openshiftsync.SecretWatcher start
+INFO: Now handling startup secrets!!
+Nov 25, 2018 3:05:09 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:09 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:09 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:09 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:09 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.SecretWatcher$1 doRun
+INFO: creating Secret watch for namespace fsdspringproject and resource version3015476484
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.ConfigMapWatcher$1 doRun
+INFO: creating ConfigMap watch for namespace fsdspringproject and resource version 3015476484
+Nov 25, 2018 3:05:10 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:10 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.BuildWatcher$1 doRun
+INFO: creating Build watch for namespace fsdspringproject and resource version 3015476506
+Nov 25, 2018 3:05:10 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.BuildConfigWatcher$1 doRun
+INFO: creating BuildConfig watch for namespace fsdspringproject and resource version 3015476509
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.BuildWatcher reconcileRunsAndBuilds
+INFO: Reconciling job runs and builds
+Nov 25, 2018 3:05:10 PM io.fabric8.jenkins.openshiftsync.ImageStreamWatcher$1 doRun
+INFO: creating ImageStream watch for namespace fsdspringproject and resource version 3015476508
+Nov 25, 2018 3:05:10 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:05:10 PM okhttp3.internal.platform.Platform log
+INFO: ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?
+Nov 25, 2018 3:06:37 PM org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm populateDefaults
+INFO: OpenShift OAuth: provider: OpenShiftProviderInfo: issuer: https://api.starter-us-west-2.openshift.com  auth ep: https://api.starter-us-west-2.openshift.com/oauth/authorize  token ep: https://api.starter-us-west-2.openshift.com/oauth/token 
+Nov 25, 2018 3:06:37 PM org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm populateDefaults
+INFO: OpenShift OAuth returning true with namespace fsdspringproject SA dir null default /run/secrets/kubernetes.io/serviceaccount SA name null default jenkins client ID null default system:serviceaccount:fsdspringproject:jenkins secret null default eyJhb....... redirect null default https://api.starter-us-west-2.openshift.com  server null default https://openshift.default.svc 
+Nov 25, 2018 3:07:05 PM org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm populateDefaults
+INFO: OpenShift OAuth: provider: OpenShiftProviderInfo: issuer: https://api.starter-us-west-2.openshift.com  auth ep: https://api.starter-us-west-2.openshift.com/oauth/authorize  token ep: https://api.starter-us-west-2.openshift.com/oauth/token 
+Nov 25, 2018 3:07:05 PM org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm populateDefaults
+INFO: OpenShift OAuth returning true with namespace fsdspringproject SA dir null default /run/secrets/kubernetes.io/serviceaccount SA name null default jenkins client ID null default system:serviceaccount:fsdspringproject:jenkins secret null default eyJhb....... redirect null default https://api.starter-us-west-2.openshift.com  server null default https://openshift.default.svc 
+Nov 25, 2018 3:07:05 PM org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm updateAuthorizationStrategy
+INFO: OpenShift OAuth: user amitabha.work.docker, stored in the matrix as amitabha.work.docker-admin, based on OpenShift roles [view, edit, admin] already exists in Jenkins
+Nov 25, 2018 3:10:09 PM io.fabric8.jenkins.openshiftsync.BuildWatcher reconcileRunsAndBuilds
+INFO: Reconciling job runs and builds
